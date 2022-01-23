@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-fintech/static/css/main.073c9b0a.css",
+    "main.js": "/test-fintech/static/js/main.c9604f2a.js",
+    "index.html": "/test-fintech/index.html",
+    "main.073c9b0a.css.map": "/test-fintech/static/css/main.073c9b0a.css.map",
+    "main.c9604f2a.js.map": "/test-fintech/static/js/main.c9604f2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c9604f2a.js"
+  ]
+}
