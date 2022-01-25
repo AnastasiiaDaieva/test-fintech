@@ -5,19 +5,9 @@ import s from './AllUsersCard.module.scss';
 
 function AllUsersCard({ user, onSelect }) {
   const [currentUser, setCurrentUser] = useState(null);
-  //   useEffect(() => {
-  //     axios
-  //       .get(`${BASE}/${login}`)
-  //       .then(response => setCurrentUser(response.data));
-  //     console.log(currentUser);
-  //   }, []);
 
   const selectUser = user => {
-    console.log(user);
-    // selectedUsers.push(id);
-    // console.log('before:', selectedUsers);
     onSelect(user);
-    // console.log('after:', selectedUsers);
   };
 
   const getCurrentUser = user => {
@@ -30,8 +20,6 @@ function AllUsersCard({ user, onSelect }) {
             : setCurrentUser(response.data),
         ),
       );
-
-    console.log(currentUser);
   };
 
   return (
