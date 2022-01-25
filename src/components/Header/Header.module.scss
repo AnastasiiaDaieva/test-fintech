@@ -1,0 +1,21 @@
+@import '/src/index.scss';
+
+.Main {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Header {
+  background-color: var(--main-color);
+  height: 10vh;
+  box-shadow: var(--basic-box-shadow);
+  padding: 2.5vh;
+}
+
+.Header__filter {
+  border-radius: 5px;
+  border: 1px solid var(--neutral-color);
+  padding: 10px;
+  font-size: 14px;
+}

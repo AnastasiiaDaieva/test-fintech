@@ -1,0 +1,15 @@
+.SelectedUserCard__item {
+  composes: AllUsersCard__item from '/src/components/AllUsers/AllUsersCard.module.scss';
+}
+
+.SelectedUserCard__delete {
+  composes: AllUsersCard__select from '/src/components/AllUsers/AllUsersCard.module.scss';
+}
+
+.SelectedUserCard__main {
+  composes: AllUsersCard__main from '/src/components/AllUsers/AllUsersCard.module.scss';
+}
+
+.SelectedUserCard__photo {
+  composes: AllUsersCard__photo from '/src/components/AllUsers/AllUsersCard.module.scss';
+}

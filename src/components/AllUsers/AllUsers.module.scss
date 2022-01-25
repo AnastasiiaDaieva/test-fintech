@@ -1,0 +1,12 @@
+.AllUsers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.AllUsers__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

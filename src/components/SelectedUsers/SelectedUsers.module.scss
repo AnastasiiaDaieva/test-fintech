@@ -1,0 +1,13 @@
+.SelectedUsers {
+  composes: AllUsers from '/src/components/AllUsers/AllUsers.module.scss';
+}
+
+.SelectedUsers__list {
+  composes: AllUsers__list from '/src/components/AllUsers/AllUsers.module.scss';
+}
+
+.SelectedUsers__notification {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
