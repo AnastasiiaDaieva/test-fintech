@@ -2,10 +2,10 @@ import axios from 'axios';
 import { BASE } from '../../api/api';
 import { useState } from 'react';
 import s from './AllUsersCard.module.scss';
+import { BsBookmarkCheck } from 'react-icons/bs';
 
 function AllUsersCard({ user, onSelect }) {
   const [currentUser, setCurrentUser] = useState(null);
-
   const selectUser = user => {
     onSelect(user);
   };
@@ -46,13 +46,12 @@ function AllUsersCard({ user, onSelect }) {
           <p>Followers: {currentUser.followers}</p>
           <p>Following: {currentUser.following}</p>
           {currentUser.location && <p>From: {currentUser.location}</p>}
-          <p>
-            GitHub: <a href={user.url}> {user.url}</a>
+          <p className={s.AllUsersCard__github}>
+            <a href={currentUser.html_url}> GitHub</a>
           </p>
           {currentUser.blog && (
-            <p>
-              <span>Blog: </span>
-              <a href={currentUser.blog}>{currentUser.blog}</a>
+            <p className={s.AllUsersCard__blog}>
+              <a href={currentUser.blog}>Blog</a>
             </p>
           )}
         </div>
@@ -61,7 +60,7 @@ function AllUsersCard({ user, onSelect }) {
         onClick={() => selectUser(user)}
         className={s.AllUsersCard__select}
       >
-        Select user
+        <BsBookmarkCheck />{' '}
       </button>
     </li>
   );

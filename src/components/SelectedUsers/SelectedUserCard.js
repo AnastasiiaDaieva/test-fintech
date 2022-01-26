@@ -1,4 +1,5 @@
 import s from './SelectedUserCard.module.scss';
+import { BsFillTrashFill } from 'react-icons/bs';
 
 function SelectedUserCard({ id, login, photo, onDelete }) {
   return (
@@ -15,7 +16,7 @@ function SelectedUserCard({ id, login, photo, onDelete }) {
         onClick={() => onDelete(id)}
         className={s.SelectedUserCard__delete}
       >
-        Delete user
+        <BsFillTrashFill />
       </button>
     </li>
   );
